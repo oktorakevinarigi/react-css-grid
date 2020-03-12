@@ -5,15 +5,27 @@ body{
 }
 #content{
   display: grid;
-  /* membuat 3 kolom dengan ukuran 30% 20% dan 50% */
+  /* grid-template-columns: 30% 20% 50% membuat 3 kolom dengan ukuran 30% 20% dan 50% */
   /* grid-template-columns: 30% 20% 50%; */
 
-  /* 1fr sama dengan flex 1 jika 2fr atau fraksi maka ukurannya dua kali lipat dari yg lain */
+  /* grid-template-columns: 1fr 2fr 2fr -> 1fr sama dengan flex 1 jika 2fr atau fraksi maka ukurannya dua kali lipat dari yg lain */
   /* grid-template-columns: 1fr 2fr 2fr; */
 
-  /* cara singkat untuk membuat 3 atau lebih kolom dengan ukurannya yg sama */
+  /* grid-template-columns: repeat(3, 1fr) cara singkat untuk membuat 3 atau lebih kolom dengan ukurannya yg sama */
   grid-template-columns: repeat(3, 1fr);
-  
+
+  /* grid-auto-rows: 200px menetapkan ukuran tinggi semua row 200px dalam id content. jika tidak maka
+  ada satu konten yg lebih banyak isinya maka yg tinggi dalam baris tersebut akan mengikuti dan baris yg lain tidak */
+  /* grid-auto-rows: 200px; */
+
+  /* grid-template-rows: repeat(3, minmax(200px, auto)) membuat 3 row dengan ukuran min 200px dan jika ada yg lebih tinggi makan row akan mengikuti konten */
+  grid-template-rows: repeat(3, minmax(200px, auto));
+
+  /* grid-gap:10px mengatur jarak antar kolom dan row  */
+  grid-gap:10px;
+
+
+
   max-width: 960px;
   margin: 0 auto;
 }
