@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 // import App from './App';
 // import GridLine from './GridLine'
 // import NestedGrids from './NestedGrids'
-import Aligning from './Aligning'
+// import Aligning from './Aligning'
+import ColumnGrid12 from './ColumnGrid12'
 
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Aligning />, document.getElementById('root'));
+ReactDOM.render(<ColumnGrid12 />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
