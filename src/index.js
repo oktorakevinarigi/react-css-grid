@@ -4,11 +4,12 @@ import ReactDOM from 'react-dom';
 // import GridLine from './GridLine'
 // import NestedGrids from './NestedGrids'
 // import Aligning from './Aligning'
-import ColumnGrid12 from './ColumnGrid12'
+// import ColumnGrid12 from './ColumnGrid12'
+import Mosaic from './Mosaic'
 
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<ColumnGrid12 />, document.getElementById('root'));
+ReactDOM.render(<Mosaic />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
